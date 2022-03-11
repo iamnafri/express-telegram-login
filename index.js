@@ -3,7 +3,7 @@ const express = require("express");
 const telegram = require("telegram");
 const telegramSession = require("telegram/sessions");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const apiId = Number(process.env.TELEGRAM_API_ID);
 const apiHash = process.env.TELEGRAM_API_ID_HASH;
